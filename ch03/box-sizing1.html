@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box-sizing 속성</title>
+  <style>
+    div{
+      width: 150px;
+      border: 5px solid #00f;
+      padding: 20px;
+      text-align: center;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .a{box-sizing: content-box;} /* 실제 너비 = 150+40+10 = 200px */
+    .b{box-sizing: border-box;} /* 실제 너비 = 150px 그대로 */
+  </style>
+</head>
+<body>
+  <div class="a">content-box</div>
+  <div class="b">border-box</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <!-- radio: name이 같아야 하나만 선택됨 -->
+    <label for="gender">성별: </label>
+    <label><input type="radio" name="gender" value="m"> 남</label>
+    <label><input type="radio" name="gender" value="f"> 여</label>
+  </div>
+
+  <div>
+    <!-- checkbox: 여러 개 선택 가능 -->
+    <label for="hobby">취미: </label>
+    <label><input type="checkbox" name="hobby" value="movie"> 영화</label>
+    <label><input type="checkbox" name="hobby" value="game"> 게임</label>
+    <label><input type="checkbox" name="hobby" value="game"> 독서</label>
+  </div>
+
+  <div>
+    <label>메모</label><br>
+    <textarea cols="30" rows="4" placeholder="내용을 입력하세요"></textarea>
+  </div>
+</body>
+</html>
